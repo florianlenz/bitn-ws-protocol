@@ -7,7 +7,7 @@ app.get('/', function(req, res){
     res.send('<h1>Hello world</h1>');
 });
 
-http.listen(80);
+http.listen(process.env.PORT || 80);
 
 const clients = [];
 
