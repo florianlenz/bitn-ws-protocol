@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : "node_modules/.bin/nodemon index.js",
+    "watch": "node_modules/.bin/nodemon --exec npm run start",
     "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^2.0.3"
+    "express": "^4.15.2",
+    "level": "^1.7.0",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"

@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+  ws1:
+    image: node:6.11.3
+    ports:
+      - "3833:80"
+    volumes:
+      - ./:/app
+    tty: true
+    working_dir: /app
+    command: "npm run watch"
